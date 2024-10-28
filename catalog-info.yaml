@@ -1,0 +1,22 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: "product-page"
+  description: "Product Page API"
+  tags:
+    - java
+  links:
+    - url: https://devspaces.apps.cluster-ldvg8.ldvg8.sandbox2768.opentlc.com/?storageType=per-workspace#https://github.com/davgordo/bookinfo-product-page-service
+      title: OpenShift Dev Spaces
+      icon: web
+    - url: https://hawtio-online.apps.cluster-ldvg8.ldvg8.sandbox2768.opentlc.com/online/discover?namespace=system=bookinfo
+      title: HawtIO
+      icon: web
+spec:
+  type: service
+  lifecycle: experimental
+  owner: "group:default/backstage-admins"
+  system: system:default/bookinfo
+  consumesApis:
+
+    - product-page
